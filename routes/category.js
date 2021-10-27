@@ -6,7 +6,6 @@ const toDelete = require('../middleware/toDelete')
 
 router.get('/read', async (req, res) => {
     const categories = await Category.find()
-
     res.render('admin/categories', {
         title: 'Kategoriyalarni ko`rish',
         header: 'Kategoriyalarni ko`rish',
@@ -53,10 +52,6 @@ router.post('/edit/:id', fileUpload.single('categoryIcon'), async (req, res) => 
 
     const category = req.body
     const { categoryIcon } = await Category.findById(req.params.id)
-
-    const { categoryIcon } = await Category.findById(req.params.id)
-    const category = req.body
-
     console.log(categoryIcon);
 
 
