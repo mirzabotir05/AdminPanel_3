@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const URI = "ccweecewcewcewcewcewewcewcew"
+const URI = "mongodb+srv://nuriddinov:J18rY8iFzwgoL2p5@adminpanel.etss3.mongodb.net/myAdminPanel"
 
 module.exports = async () => {
     try {
