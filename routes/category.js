@@ -45,12 +45,6 @@ router.get('/edit/:id', async (req, res) => {
         category,
         header: 'Create to Category',
         title: 'Create to Category',
-
-    res.render('admin/categoryEdit', {
-        category,
-        header: 'Kategoriyalarni yangilash',
-        title: 'Kategoriyalarni yangilash',
-
         layout: 'main'
     })
 })
